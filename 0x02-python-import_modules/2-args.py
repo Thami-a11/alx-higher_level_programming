@@ -4,7 +4,7 @@ if __name__ == "__main__":
   """print arguments number and list args"""
   import sys
   
-  counter = len(sys.argv)
+  counter = len(sys.argv) - 1
   if counter == 0:
     print("0. arguments")
   elif counter == 1:
