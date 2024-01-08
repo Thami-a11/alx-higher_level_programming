@@ -2,7 +2,7 @@
 
 def element_at(my_list, idx):
   if idx < 0:
-    return null
+    return None
   elif idx > len(my_list):
-    return null
+    return None
   print("Element of {:d} is {}".format(idx,my_list[idx])
