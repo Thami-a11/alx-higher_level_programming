@@ -26,7 +26,7 @@ def width(self, value):
     raise TypeError("Value must be interger.")
   if value < 0:
     raise TypeError("Value should be not be less than 0")
-  return self.__height
+  return self.__width = value
 
 @property
 def height(self):
