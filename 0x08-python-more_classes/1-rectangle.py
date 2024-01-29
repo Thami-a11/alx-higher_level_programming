@@ -22,11 +22,11 @@ def width(self):
 
 @width.setter
 def width(self, value):
-  if not isinstance(value, int):
-    raise TypeError("Value must be interger.")
-  if value < 0:
-    raise TypeError("Value should be not be less than 0")
-  return self.__width = value
+    if not isinstance(value, int):
+        raise TypeError("Value must be interger.")
+    if value < 0:
+        raise TypeError("Value should be not be less than 0")
+    self.__width = value
 
 @property
 def height(self):
@@ -35,8 +35,8 @@ def height(self):
 
 @hight.setter
 def height(self, value):
-        if not isinstance(value, int):
-            raise TypeError("Value must be interger.")
-        if value < 0:
-            raise ValueError("Value should be not be less than 0")
-        self.__height = value
+    if not isinstance(value, int):
+        raise TypeError("Value must be interger.")
+    if value < 0:
+        raise ValueError("Value should be not be less than 0")
+    self.__height = value
