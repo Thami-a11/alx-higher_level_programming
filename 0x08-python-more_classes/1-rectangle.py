@@ -15,28 +15,28 @@ class Rectangle:
       self.width = width
       self.height = height
 
-@property
-def width(self):
-   """Get/set the width of the rectangle."""
-  return self.__width
+    @property
+        def width(self):
+           """Get/set the width of the rectangle."""
+          return self.__width
 
-@width.setter
-def width(self, value):
-    if not isinstance(value, int):
-        raise TypeError("Value must be interger.")
-    if value < 0:
-        raise TypeError("Value should be not be less than 0")
-    self.__width = value
+    @width.setter
+        def width(self, value):
+            if not isinstance(value, int):
+                raise TypeError("Value must be interger.")
+            if value < 0:
+                raise TypeError("Value should be not be less than 0")
+            self.__width = value
 
-@property
-def height(self):
-  """Get/set the Height of the rectangle."""
-  return self.__height
+    @property
+        def height(self):
+          """Get/set the Height of the rectangle."""
+          return self.__height
 
-@hight.setter
-def height(self, value):
-    if not isinstance(value, int):
-        raise TypeError("Value must be interger.")
-    if value < 0:
-        raise ValueError("Value should be not be less than 0")
-    self.__height = value
+    @hight.setter
+        def height(self, value):
+            if not isinstance(value, int):
+                raise TypeError("Value must be interger.")
+            if value < 0:
+                raise ValueError("Value should be not be less than 0")
+            self.__height = value
